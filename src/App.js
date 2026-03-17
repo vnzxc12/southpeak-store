@@ -6,7 +6,7 @@ const products = [
 id:1,
 name:"Penfolds Bin 28",
 category:"Red Wine",
-price:2500,
+price:2,
 oldPrice:2500,
 badge:"",
 origin:"Australia",
@@ -536,7 +536,7 @@ const fetchOrderStatus = async (orderId) => {
     localStorage.setItem("current_order_id", orderId);
 
     const response = await fetch(
-      "http://localhost:5000/api/create-checkout-session",
+      "https://southpeak-store.onrender.com/api/create-checkout-session",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
