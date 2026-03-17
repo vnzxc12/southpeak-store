@@ -49,8 +49,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
           description: "Website order payment",
           line_items,
           payment_method_types: ["qrph"],
-          success_url: "http://localhost:3000",
-          cancel_url: "http://localhost:3000",
+          success_url: "https://southpeak-store-nk6y.vercel.app",
+          cancel_url: "https://southpeak-store-nk6y.vercel.app",
         },
       },
     };
