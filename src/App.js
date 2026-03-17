@@ -463,7 +463,7 @@ const clearCheckoutState = () => {
 const fetchOrderStatus = async (orderId) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/order-status/${orderId}`
+      `https://southpeak-store.onrender.com/api/order-status/${orderId}`
     );
     const data = await response.json();
 
